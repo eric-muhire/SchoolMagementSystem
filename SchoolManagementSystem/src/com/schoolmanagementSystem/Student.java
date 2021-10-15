@@ -15,7 +15,8 @@ public class Student {
 
     /**
      * To create a new student by initializing
-     *
+     * Fees for every student is $ 30 000
+     * fee paid initially is 0
      * @param id id for student:unique.
      * @param name name for the student.
      * @param grade grade for the student.
@@ -25,7 +26,29 @@ public class Student {
     this.id = id;
     this.name = name;
     this.grade = grade;
-
+        this.feesPaid=0;
+        this.feesTotal=0;
 }
+//Not going to alter(ändra) student´s name, student id.
+
+    /**
+     * Used to upgrade the student´s grade.
+     * @param grade new grade of student
+     */
+    public void setGrade(int grade){
+        this.grade=grade;
+
+    }
+
+    /**
+     * keep adding the fees to feesPaid Field.
+     * add the fees to the fees paid.
+     * The school is going to receive the funds.
+     * @param fees the fees that the student pays.
+     */
+    public void updateFeepaids(int fees){
+        feesPaid=fees;
+
+    }
 
 }
